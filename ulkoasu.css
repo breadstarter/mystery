@@ -1,0 +1,25 @@
+body{
+  background-color: black;
+  color: greenyellow
+}
+
+h2{
+  background-color: white;
+  color: black;
+}
+
+div{
+background-color: white;
+ text-align: center;
+}
+
+.alaotsikko{
+  background-color: yellow;
+  color: blue;
+ text-align: center;
+}
+#etusivunappula{
+  background-color: aqua;
+  color:blue;
+  margin:auto;
+  width: 30%;}
