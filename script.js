@@ -2,12 +2,17 @@ function laskutehtava(ekaArvo, tokaArvo){
   return ekaArvo + tokaArvo;
 }
 
-function pvmFin(vuosi, kk, pv){
- let pvm = 2021/08/21;
-pvm.split+("/")[0], [1], [2];
 
+let pvm="2021/08/21";
+
+// funktio:
+function pvmFin(vuosi, kk, pv){
+  return pv+"."+kk+"."+vuosi;
 
 }
+
+console.log(pvmFin(pvm.split("/")[0], pvm.split("/")[1], pvm.split("/")[2]));
+
 
 console.log("täällä ollaan!");
 
