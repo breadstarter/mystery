@@ -23,3 +23,7 @@ background-color: white;
   color:blue;
   margin:auto;
   width: 30%;}
+
+.boksit{
+  list-style-type: none;
+}

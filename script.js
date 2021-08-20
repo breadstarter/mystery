@@ -67,7 +67,35 @@ else{
 
 console.log(laskutehtava(394857, 23897));
 
+//console.log(document.querySelector('#kentta').type);
+//console.log(document.querySelector('.lisaaNappi').value);
 
+document.querySelector('.lisaaNappi').addEventListener('click', e =>{
+  e.preventDefault();
+  console.log(document.querySelector('#kentta').value);
+
+  document.querySelector('.ilmoitus').innerHTML = "kentan sisalto on " + document.querySelector('#kentta').value + "</b>";
+
+  setTimeout(() => document.querySelector('.ilmoitus').innerHTML='', 3000);
+})
+
+document.querySelector('.merkinta').addEventListener('click', e =>{
+  e.preventDefault();
+  console.log("nappi toimii");
+  if(document.querySelector('#teht_a').checked){
+    document.querySelector('.boksit').children[0].innerHTML = '<li class="sisalto"><input type="checkbox" id="teht_a" checked>Tehtävä A on nyt tehty</li>';
+  }
+  else{
+     document.querySelector('.boksit').children[0].innerHTML = '<li class="sisalto"><input type="checkbox" id="teht_a">Tehtävä A</li>';
+  }
+
+  if(document.querySelector('#teht_b').checked){
+    document.querySelector('.boksit').children[1].innerHTML = '<li class="sisalto"><input type="checkbox" id="teht_b" checked>Tehtävä B on nyt tehty</li>';
+  }
+  else{
+     document.querySelector('.boksit').children[1].innerHTML = '<li class="sisalto"><input type="checkbox" id="teht_b">Tehtävä B</li>';
+  }
+});
 
 
 
